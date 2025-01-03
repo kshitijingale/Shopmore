@@ -1,0 +1,54 @@
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.button {
+  margin: 0.3rem 0;
+  padding: 0.6rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  background-color: #078159;
+  border: 1px solid #037851;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #05583b;
+  font-weight: 700;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  font-size: 1.1rem;
+}
+
+.modal-actions {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
+}
