@@ -26,6 +26,14 @@ app.get("/", (req, res, next) => {
   res.send("Shopmore backend API is running successfully...");
 });
 
+// app.get("/", (req, res, next) => {
+//   console.log("Route handler invoked");
+//   next();
+// }, requireSignIn, admin, createManyProducts);
+
+// // app.get("/", createManyProducts);
+
+
 app.use(notFound);
 app.use(errorHandler);
 

@@ -356,8 +356,6 @@ const createProduct = async (req, res, next) => {
 };
 
 const createManyProducts = async (req, res, next) => {
-  console.log("OLA");
-
   try {
     products.forEach((product) => {
       product.user = req.user._id;
